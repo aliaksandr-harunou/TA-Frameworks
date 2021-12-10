@@ -1,7 +1,7 @@
 {
-  "name": "module-7",
+  "name": "module-9",
   "version": "1.0.0",
-  "description": "page object pattern",
+  "description": "TA framework creaction",
   "main": "index.js",
   "scripts": {
     "postinstall": "webdriver-manager update",
@@ -9,18 +9,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aliaksandr-harunou/module-7.git"
+    "url": "git+https://github.com/aliaksandr-harunou/module-9.git"
   },
   "keywords": [
-    "page",
-    "object"
+    "logger",
+    "report"
   ],
   "author": "Aliaksandr Harunou",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/aliaksandr-harunou/module-7/issues"
+    "url": "https://github.com/aliaksandr-harunou/module-9/issues"
   },
-  "homepage": "https://github.com/aliaksandr-harunou/module-7#readme",
+  "homepage": "https://github.com/aliaksandr-harunou/module-9#readme",
   "devDependencies": {
     "chai": "^4.3.4",
     "mocha": "^9.1.3",
