@@ -1,5 +1,5 @@
-const logger = require('../../../test/config/logger.config.js');
-const {highlight} = require('../actionsFunctions');
+const logger = require('../../../../test/config/logger.config.js');
+const {highlight} = require('../../helpers/actionsFunctions');
 
 class Element {
     constructor(elementName, selector) {
@@ -14,7 +14,8 @@ class Element {
     };
 
     async type(text) {
-        logger.info(`Typing "${text}" into "${this.elementName}"`);
+        await highlight(this.element);
+        logger.info(`Typing "${text}" into "${this.elementName}"`);    
         return await this.element.sendKeys(text);
     };
 
