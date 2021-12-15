@@ -4,7 +4,7 @@ npm install
 ```
 # specify your own EPAM credentials
 ```
-file: test -> utils -> login_page -> credentials.js
+file: test -> utils -> pageObjects -> login_page -> credentials.js
 ```
 # run tests
 ```
