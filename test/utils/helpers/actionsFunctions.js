@@ -1,4 +1,3 @@
-const { Key } = require("protractor");
 const logger = require('../../config/logger.config');
 
 async function mauseClick(element, elementName) {

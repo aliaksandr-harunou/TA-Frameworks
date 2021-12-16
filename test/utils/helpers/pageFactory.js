@@ -1,7 +1,7 @@
 const HomePage = require("../pageObjects/home_page/home_page");
 const MyProfilePage = require("../pageObjects/my_profile_page/my_profile_page");
 const LoginPage = require("../pageObjects/login_page/login_page");
-const MicrosoftLoginPage = require("../pageObjects/login_page/micr_login_page");
+const MicrosoftLoginPage = require("../pageObjects/login_page/microsoft_login_page");
 const BasePage = require("../pageObjects/base_page/base_page");
 
 
