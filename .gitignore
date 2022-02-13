@@ -36,6 +36,7 @@ node_modules/
 jspm_packages/
 mochawesome-report/
 test/report/
+test/utils/constants/
 
 # TypeScript v1 declaration files
 typings/

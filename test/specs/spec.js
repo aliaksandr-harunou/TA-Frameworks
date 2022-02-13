@@ -4,6 +4,7 @@ const loginPage = PageFactory.getPage("Login");
 const homePage = PageFactory.getPage("Home");
 const myProfilePage = PageFactory.getPage("MyProfile");
 const initialLoginPage = PageFactory.getPage("Initial");
+const microsoftLoginPage = PageFactory.getPage("Microsoft");
 const {mauseClick, scrollTo, hover} = require('../utils/helpers/actionsFunctions');
 const {wait, open, waitUntilVisible} = require("../utils/helpers/functions");
 
@@ -16,13 +17,13 @@ describe("Heroes home page tests", function () {
 
     it("should have 11 recent badges", async function () {
         await open('https://heroes.epam.com/');
-        await initialLoginPage.clickSignInWithEpamCreds();
         await loginPage.typeLogin();
         await loginPage.typePassword();
         const signInButton = await loginPage.signInButton.element;
         const signInButtonName = await loginPage.signInButton.elementName;
         await mauseClick(signInButton, signInButtonName);
         await loginPage.clickSendMePush();
+        await microsoftLoginPage.clickYes();
         await homePage.waitForFirstNavigationButton();
         await homePage.Header.navigationButtons.clickElementByText("My Profile");
         await myProfilePage.waitForRecentBadges();
